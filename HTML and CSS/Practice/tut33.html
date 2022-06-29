@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1580824026089-8b429c3834f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1434&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 75%;
+        }
+        .navigation{
+            display: flex;
+            
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+            flex-direction: row;
+            font-size: 2em;
+        }
+        section{
+            margin: 3px 23px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* section::before{
+            content: "This is Content";
+        } */
+        p{
+            font-size: 23px;
+            text-align: center;
+        }
+        h3{
+            
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore, sunt eligendi neque repellat voluptatem quisquam temporibus perspiciatis officia delectus dolores ad similique mollitia voluptatibus nihil sit unde laboriosam labore distinctio, sint sed maxime.</p>
+        </section>
+    </header>
+</body>
+</html>

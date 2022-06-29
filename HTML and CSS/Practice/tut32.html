@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            width: 233px;
+            margin: auto;
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 24px;
+            border: 2px solid red;
+        }
+        a[target="_blank"]{
+            color: yellowgreen;
+        }
+
+        a[target="_self"]{
+            color: red;
+        }
+        li:nth-child(even){
+            background-color: rgb(209, 207, 207);
+            border-radius: 5px;
+            border: none;
+        }
+        li:nth-child(2n+1){
+            background-color: rgb(188, 187, 187);
+            border-radius: 5px;
+            border: none;
+        }
+        li{
+            padding: 2px;
+            margin: 15px;
+        }
+        ul{
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name: ">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+        </ul>
+        <a href="https://www.google.com" target="_blank"><h1>Go to Google</h1></a>
+        <a href="https://www.youtube.com" target="_self"><h1>Go to Youtube</h1></a>
+    </div>
+</body>
+</html>
