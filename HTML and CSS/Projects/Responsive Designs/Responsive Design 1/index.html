@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+
+        .wrapper>* {
+            padding: 10px;
+            margin: 10px;
+            flex: 1 100%;
+            border-radius: 10px;
+        }
+
+        .header {
+            background-color: tomato;
+            height: 120px;
+        }
+
+        .footer {
+            background: lightgreen;
+            height: 80px;
+        }
+
+        .main {
+            text-align: left;
+            background: deepskyblue;
+            height: 300px;
+            font-size: 25px;
+        }
+
+        .aside1 {
+            background: gold;
+        }
+
+        .aside2 {
+            background: hotpink;
+        }
+
+        @media all and (min-width: 800px) {
+            .main{
+                flex:3 ;
+            }
+            .aside1{
+                order: 1;
+            }
+            .aside2{
+                order: 2;
+            }
+            .main{
+                order: 2;
+            }
+        }
+        @media all and (min-width:600px){
+            .aside{
+                flex:1 ;
+            }
+        }
+
+        @media screen and (max-width:375px){
+            .main,.aside, .footer{
+                overflow: scroll;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <article class="main">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab suscipit laborum accusamus. Eos
+                ratione, porro, illo vel rem voluptates quia laboriosam accusantium esse optio dicta. Accusamus eaque
+                atque voluptatibus et in pariatur quidem, est earum temporibus hic illo beatae!</p>
+        </article>
+        <aside class="aside aside1">
+            <h1>Aside 1</h1>
+        </aside>
+        <aside class="aside aside2">
+            <h1>Aside 2</h1>
+        </aside>
+        <footer class="footer">
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+
+</html>
