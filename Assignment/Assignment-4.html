@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+</head>
+
+<body>
+    <h1>Input Based Calculator</h1>
+    <h2>Take two numbers using JavaScript</h2>
+    <i>Do following Opeartions: </i>
+    <ul>
+        <li>Addition</li>
+        <li>Subtraction</li>
+    </ul>
+    <strong id="answer">Answer:</strong>
+    
+    <script>
+        console.log("JavaScript based calculator");
+        let val1 = prompt("Enter first number");
+        let val2 = prompt("Enter second number");
+        let operation = prompt("Enter operation");
+        let ans=document.getElementById("answer");
+        if (operation === '+') {
+
+            answer.innerHTML = "Answer: " + (parseInt(val1) + parseInt(val2));
+        }
+        else if (operation === '-') {
+            answer.innerHTML = "Answer: " + (parseInt(val1) - parseInt(val2));
+        }
+        else {
+            answer.innerHTML = "Invalid operation";
+        }
+
+    </script>
+</body>
+
+</html>
