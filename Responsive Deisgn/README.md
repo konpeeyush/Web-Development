@@ -26,8 +26,15 @@
 ```
 
 6. *How to decide which unit to use?*
-    * P
-    * 
+    * em is relative of the font-size of particular element, so if used as margin it will apply accordingly
+
+***
+## FlexBox
+```
+Elements normally have a display:block or a display:inline as a default from the browser.
+
+We can change this behaviour by setting the display property to flex on the parent element.
+```
 
 
 
