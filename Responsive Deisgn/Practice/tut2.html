@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Montserat', sans-serif;
+            font-weight: 400;
+            color: #143774;
+            font-size: 2rem;
+            margin: 0;
+
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            /* border: 1px solid magenta; */
+            margin: 0 auto;
+        }
+
+        .container-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-weight: 700;
+            color: #1792d2;
+            font-size: .75rem;
+        }
+
+        header {
+            text-align: center;
+            background: #f8f8f8;
+            padding: 2em 0;
+        }
+
+
+        nav {
+            margin: auto 0;
+        }
+
+        nav ul {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            margin-left: 2em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #707070;
+            font-weight: 700;
+            padding: 0.25em 0;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #1792d2;
+        }
+
+        .current-page {
+            border-bottom: 1px solid #707070;
+        }
+
+        .current-page:hover {
+            color: #707070;
+        }
+
+        @media (max-width:675px) {
+            .container-nav {
+                flex-direction: column;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            nav ul{
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+            nav li{
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>Living the social life</h1>
+                <p class="subtitle">A blog exploring minimilasim in life</p>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link current-page" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About Me</a></li>
+                    <li><a class="nav-link" href="#">Recent Posts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

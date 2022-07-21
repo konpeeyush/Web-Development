@@ -1,4 +1,4 @@
-# Notes
+# Notes 🤯
 
 ## CSS Units
 ### Absolute Units:- 
@@ -28,13 +28,35 @@
 6. *How to decide which unit to use?*
     * em is relative of the font-size of particular element, so if used as margin it will apply accordingly
 
-***
+---
 ## FlexBox
 ```
 Elements normally have a display:block or a display:inline as a default from the browser.
 
 We can change this behaviour by setting the display property to flex on the parent element.
 ```
+## Media Queries
+```
+Media queries let us add new styles that target only specific conditions.
+
+Syntax:-
+    @media media-type and (media-features){...}
+
+The media types let's us target different types of media
+- Screen @media screen {...}
+- Print @media print {...}
+- Speech @media speech {...}
+
+The media conditions let's us target specific conditions within that media type
+- Widths @media (min-width:600px) {...}
+- Orientation @media (orientation:landscape) {...}
+- Specific features @media (hover) {...}
+
+Both media types and conditions are optional.
+
+You can combine a type with a condition by using and.
+```
+
 
 
 

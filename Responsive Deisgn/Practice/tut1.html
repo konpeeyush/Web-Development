@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body{
+            font-size: 1.125rem;
+            color: #707070;
+            margin: 0;
+            /* background-color: pink; */
+        }
+
+        /* @media (min-width:400px){
+            body{
+                background-color: purple;
+            }
+        }
+
+        @media (min-width:650px){
+            body{
+                background-color:orange;
+            }
+        } */
+
+        @media (max-width:600px){
+            .columns{
+                flex-direction: column;
+            }
+        }
+
+        h1{
+            font-size: 3rem;
+            color: #212614;
+            text-align: center;
+        }
+
+        h1 span{
+            color: #b7832f;
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        .container{
+            width: 95%;
+            max-width: 980px;
+            margin:0 auto ;
+        }
+
+        .container img{
+            max-width: 100%;
+        }
+
+        .columns{
+            display: flex;
+            margin: 1em 0;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* border: 2px solid steelblue; */
+        }
+
+        /* .col{
+            border: 2px solid magenta;
+        } */
+
+        .col-bg{
+            background-color: #212614;
+            padding: 1em;
+            color: #fff;
+        }
+
+        p{
+            margin-top: 0;
+        }
+
+        .col-1{
+            width: 20%;
+        }
+
+        .col-2{
+            width: 45%;
+        }
+
+        .col-3{
+            width: 70%;
+        }
+
+        @media (max-width:600px){
+            .col{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Let's start <span>getting a little</span> more fancy!</h1>
+        <img src="./Assets/elephant.jpg" alt="">
+
+        <div class="columns">
+            <div class="col col-1">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam distinctio consequatur doloribus odio a harum at esse nisi ex explicabo libero ducimus, dolores sit quas pariatur enim minus delectus?</p>
+            </div>
+            <div class="col col-2">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minus, exercitationem quibusdam quas dolorum mollitia est aliquid asperiores nulla ipsam quasi possimus? Beatae alias voluptatem sed, magnam, ea officia, numquam sint asperiores iusto explicabo vero modi dignissimos. Quia, earum maiores.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id incidunt ratione consequuntur doloremque maxime. Non ipsa commodi ipsam cupiditate possimus, itaque ipsum laborum facere quis, corrupti velit aperiam voluptatibus repellendus?</p>
+            </div>
+            <div class="col col-1 col-bg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sint porro incidunt libero culpa a sed corrupti optio repellendus recusandae?</p>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="col col-3">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores incidunt architecto illo consectetur velit veritatis ipsum amet, vero facilis delectus?</p>
+            </div>
+            <div class="col col-1 col-bg"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga quae fugiat voluptas, facilis</p></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
